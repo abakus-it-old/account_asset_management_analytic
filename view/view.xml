@@ -6,7 +6,7 @@
             <field name="model">account.asset.asset</field>
             <field name="inherit_id" ref="account_asset_management.view_account_asset_asset_form"/>
             <field name="arch" type="xml">
-                <xpath expr='//field[@name="category_id"]' position='after'>
+                <xpath expr='//field[@name="name"]' position='after'>
                     <field name="account_analytic_id" groups="analytic.group_analytic_accounting"/>
                 </xpath>
             </field>
