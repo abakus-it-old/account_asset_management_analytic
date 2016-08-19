@@ -1,7 +1,7 @@
 # coding: utf-8
 {
     "name": "Account Asset Analytic by AbAKUS",
-    "version": "1.0",
+    "version": "9.0.1.0",
     "author": "AbAKUS it-solutions",
     "category": "Accounting",
     "website": "http://www.abakusitsolutions.eu",
