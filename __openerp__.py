@@ -8,7 +8,7 @@
     "license": "AGPL-3",
     "depends": [
         "account",
-        "account_asset_management",
+        "account_asset",
     ],
     "description": 
     """
