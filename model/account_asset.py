@@ -29,7 +29,7 @@ class AccountAssetDepreciationLine(models.Model):
             return created_move_ids
         move_line_obj = self.pool.get('account.move.line')
         for line in self.browse(cr, uid, ids, context=context):
-            aml_ids = move_line_obj.search(cr, uid, [('asset_id', '=', line.asset_id), ('move_id', 'in', created_move_ids), ('debit', '>', 0)], context=context)
+            aml_ids = move_line_obj.search(cr, uid, [('move_id', 'in', created_move_ids), ('debit', '>', 0)], context=context)
             if aml_ids and line.asset_id.account_analytic_id:
                 move_line_obj.write(cr, uid, aml_ids, {
                     'analytic_account_id': line.asset_id.account_analytic_id.id,
